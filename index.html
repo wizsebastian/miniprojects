@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rutina Pecho y Brazos - Guía Visual</title>
+    <title>💀 RUTINA BEAST MODE - PECHO Y BRAZOS 💀</title>
     <style>
         * {
             margin: 0;
@@ -12,52 +12,121 @@
         }
         
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 25%, #2d2d2d 50%, #1a1a1a 75%, #0c0c0c 100%);
+            background-attachment: fixed;
+            color: #e0e0e0;
             min-height: 100vh;
-            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 107, 107, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(192, 192, 192, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            background: white;
-            border-radius: 15px;
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 
+                0 0 50px rgba(192, 192, 192, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #c0c0c0, #808080, #c0c0c0, #606060);
+            border-radius: 22px;
+            z-index: -1;
         }
         
         .header {
-            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
-            color: white;
-            padding: 30px;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 25%, #333333 50%, #1a1a1a 75%, #000000 100%);
+            color: #c0c0c0;
+            padding: 40px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(192, 192, 192, 0.2), transparent);
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% { left: -100%; }
+            100% { left: 100%; }
         }
         
         .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            text-shadow: 
+                0 0 10px rgba(192, 192, 192, 0.8),
+                0 0 20px rgba(192, 192, 192, 0.4),
+                2px 2px 4px rgba(0, 0, 0, 0.8);
+            background: linear-gradient(45deg, #c0c0c0, #ffffff, #c0c0c0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+            position: relative;
         }
         
         .subtitle {
-            font-size: 1.2em;
+            font-size: 1.4em;
             opacity: 0.9;
+            color: #ff6b6b;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .info-bar {
-            background: #f8f9fa;
-            padding: 20px;
-            border-left: 5px solid #FF6B6B;
-            margin: 20px;
-            border-radius: 5px;
+            background: linear-gradient(135deg, #1a1a1a, #000000);
+            padding: 25px;
+            border-left: 5px solid #c0c0c0;
+            margin: 25px;
+            border-radius: 10px;
+            box-shadow: 
+                0 5px 15px rgba(0, 0, 0, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            font-weight: bold;
+            color: #e0e0e0;
         }
         
         .section {
-            padding: 30px;
-            border-bottom: 1px solid #eee;
+            padding: 40px;
+            border-bottom: 1px solid #333;
+            position: relative;
         }
         
         .section:last-child {
@@ -65,104 +134,162 @@
         }
         
         .section-title {
-            font-size: 2em;
-            color: #333;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #4ECDC4;
-            padding-bottom: 10px;
+            font-size: 2.5em;
+            color: #c0c0c0;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #c0c0c0;
+            padding-bottom: 15px;
             display: flex;
             align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
         }
         
         .section-icon {
-            font-size: 1.2em;
-            margin-right: 15px;
-            background: #4ECDC4;
-            color: white;
-            width: 40px;
-            height: 40px;
+            font-size: 1.5em;
+            margin-right: 20px;
+            background: linear-gradient(135deg, #c0c0c0, #808080);
+            color: #000;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 
+                0 0 20px rgba(192, 192, 192, 0.3),
+                inset 0 2px 4px rgba(255, 255, 255, 0.2);
+            font-weight: bold;
         }
         
         .exercise-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 25px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
         }
         
         .exercise-card {
-            background: #f8f9fa;
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.7),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+        
+        .exercise-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, transparent, rgba(192, 192, 192, 0.2), transparent);
+            border-radius: 22px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+        
+        .exercise-card:hover::before {
+            opacity: 1;
         }
         
         .exercise-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.8),
+                0 0 30px rgba(192, 192, 192, 0.2);
         }
         
         .exercise-header {
             display: flex;
             align-items: center;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         
         .exercise-number {
-            background: #FF6B6B;
-            color: white;
-            width: 30px;
-            height: 30px;
+            background: linear-gradient(135deg, #c0c0c0, #808080);
+            color: #000;
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            margin-right: 15px;
+            margin-right: 20px;
+            font-size: 1.2em;
+            box-shadow: 0 0 15px rgba(192, 192, 192, 0.3);
         }
         
         .exercise-name {
-            font-size: 1.3em;
+            font-size: 1.5em;
             font-weight: bold;
-            color: #333;
+            color: #e0e0e0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .exercise-visual {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 15px 0;
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
             text-align: center;
-            min-height: 120px;
+            min-height: 140px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 2px dashed #4ECDC4;
+            border: 2px solid #c0c0c0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .exercise-visual::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(192, 192, 192, 0.1), transparent);
+            animation: visualShine 4s infinite;
+        }
+        
+        @keyframes visualShine {
+            0% { left: -100%; }
+            100% { left: 100%; }
         }
         
         .stick-figure {
-            font-size: 3em;
-            color: #4ECDC4;
+            font-size: 4em;
+            color: #c0c0c0;
+            text-shadow: 0 0 20px rgba(192, 192, 192, 0.5);
         }
         
         .exercise-desc {
-            color: #666;
-            margin-bottom: 15px;
-            line-height: 1.6;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            font-size: 1.1em;
         }
         
         .exercise-stats {
             display: flex;
             justify-content: space-between;
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            padding: 20px;
+            border-radius: 12px;
             font-weight: bold;
+            border: 1px solid #333;
+            margin-bottom: 15px;
         }
         
         .stat {
@@ -170,26 +297,74 @@
         }
         
         .stat-value {
-            color: #FF6B6B;
-            font-size: 1.2em;
+            color: #c0c0c0;
+            font-size: 1.5em;
+            text-shadow: 0 0 10px rgba(192, 192, 192, 0.3);
         }
         
         .stat-label {
-            color: #666;
-            font-size: 0.9em;
+            color: #808080;
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .video-link {
+            display: block;
+            background: linear-gradient(135deg, #ff6b6b, #cc5555);
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .video-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .video-link:hover::before {
+            left: 100%;
+        }
+        
+        .video-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
         }
         
         .tips {
-            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
-            color: white;
-            padding: 25px;
-            margin: 20px;
-            border-radius: 10px;
+            background: linear-gradient(135deg, #1a1a1a, #000000);
+            color: #e0e0e0;
+            padding: 35px;
+            margin: 30px;
+            border-radius: 15px;
+            border: 2px solid #c0c0c0;
+            box-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.7),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
         
         .tips h3 {
-            margin-bottom: 15px;
-            font-size: 1.5em;
+            margin-bottom: 25px;
+            font-size: 2em;
+            color: #c0c0c0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
         }
         
         .tips ul {
@@ -197,15 +372,47 @@
         }
         
         .tips li {
-            margin-bottom: 10px;
-            padding-left: 25px;
+            margin-bottom: 15px;
+            padding-left: 40px;
             position: relative;
+            font-size: 1.1em;
+            line-height: 1.6;
         }
         
         .tips li:before {
-            content: "💡";
+            content: "⚡";
             position: absolute;
             left: 0;
+            font-size: 1.5em;
+            color: #c0c0c0;
+            text-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
+        }
+        
+        .beast-mode {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            margin: 30px;
+            border-radius: 15px;
+            border: 2px solid #c0c0c0;
+            box-shadow: 0 0 30px rgba(192, 192, 192, 0.2);
+        }
+        
+        .beast-mode h2 {
+            font-size: 2.5em;
+            color: #c0c0c0;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 15px rgba(192, 192, 192, 0.5);
+        }
+        
+        .beast-mode p {
+            font-size: 1.3em;
+            color: #ff6b6b;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         @media (max-width: 768px) {
@@ -214,10 +421,14 @@
             }
             
             .header h1 {
-                font-size: 2em;
+                font-size: 2.5em;
             }
             
             .section {
+                padding: 25px;
+            }
+            
+            .exercise-card {
                 padding: 20px;
             }
         }
@@ -226,19 +437,19 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>💪 RUTINA PECHO Y BRAZOS</h1>
-            <div class="subtitle">Guía Visual para Somatotipo Meso-Endomorfo</div>
+            <h1>💀 BEAST MODE WORKOUT 💀</h1>
+            <div class="subtitle">Rutina Pecho y Brazos - Somatotipo Meso-Endomorfo</div>
         </div>
         
         <div class="info-bar">
-            <strong>🎯 Información General:</strong> Frecuencia: 2 veces por semana | Descanso entre series: 45-60 segundos | Peso: Desafiante pero controlable
+            <strong>⚡ ESPECIFICACIONES DE GUERRA:</strong> Frecuencia: 2 veces por semana | Descanso: 45-60 segundos | Peso: Hasta el límite controlado
         </div>
         
         <!-- PECHO -->
         <div class="section">
             <h2 class="section-title">
-                <div class="section-icon">🫁</div>
-                EJERCICIOS DE PECHO
+                <div class="section-icon">💥</div>
+                DEMOLICIÓN DE PECHO
             </h2>
             
             <div class="exercise-grid">
@@ -249,16 +460,16 @@
                     </div>
                     <div class="exercise-visual">
                         <div>
-                            <div class="stick-figure">🧍‍♂️</div>
-                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                                Acostado boca arriba<br>
-                                Brazos extendidos hacia arriba<br>
-                                Bajar hasta tocar el piso
+                            <div class="stick-figure">🏴‍☠️</div>
+                            <div style="margin-top: 15px; font-size: 1em; color: #c0c0c0; font-weight: bold;">
+                                ACOSTADO COMO GUERRERO<br>
+                                BRAZOS EXTENDIDOS AL CIELO<br>
+                                DESCENSO CONTROLADO AL INFIERNO
                             </div>
                         </div>
                     </div>
                     <div class="exercise-desc">
-                        Acostado en el piso, sostén las mancuernas con los brazos extendidos. Baja controladamente hasta que los codos toquen el suelo, luego empuja hacia arriba. Simula el press de banca tradicional.
+                        Acostado en el piso como un gladiador caído, sostén las mancuernas con los brazos extendidos hacia el olimpo. Baja controladamente hasta que los codos besen el suelo, luego empuja hacia arriba con la fuerza de mil soles. Este es tu press de banca de batalla.
                     </div>
                     <div class="exercise-stats">
                         <div class="stat">
@@ -270,6 +481,9 @@
                             <div class="stat-label">Repeticiones</div>
                         </div>
                     </div>
+                    <a href="https://www.youtube.com/results?search_query=floor+press+dumbbell+technique" target="_blank" class="video-link">
+                        🎥 VER TÉCNICA DE DESTRUCCIÓN
+                    </a>
                 </div>
                 
                 <div class="exercise-card">
@@ -279,16 +493,16 @@
                     </div>
                     <div class="exercise-visual">
                         <div>
-                            <div class="stick-figure">🤸‍♂️</div>
-                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                                Brazos abiertos en cruz<br>
-                                Codos ligeramente doblados<br>
-                                Movimiento de abrazo
+                            <div class="stick-figure">🦅</div>
+                            <div style="margin-top: 15px; font-size: 1em; color: #c0c0c0; font-weight: bold;">
+                                BRAZOS COMO ALAS DE ACERO<br>
+                                CODOS DOBLADOS COMO DAGAS<br>
+                                ABRAZO MORTAL AL PECHO
                             </div>
                         </div>
                     </div>
                     <div class="exercise-desc">
-                        Acostado, abre los brazos en forma de cruz con los codos ligeramente doblados. Haz un movimiento como si fueras a dar un abrazo, juntando las mancuernas arriba del pecho.
+                        Acostado como un águila de guerra, abre los brazos en forma de cruz con los codos ligeramente doblados como espadas. Haz un movimiento como si fueras a dar un abrazo letal, juntando las mancuernas arriba del pecho como si aplastaras a tus enemigos.
                     </div>
                     <div class="exercise-stats">
                         <div class="stat">
@@ -300,6 +514,9 @@
                             <div class="stat-label">Repeticiones</div>
                         </div>
                     </div>
+                    <a href="https://www.youtube.com/results?search_query=floor+fly+dumbbell+chest" target="_blank" class="video-link">
+                        🎥 DOMINAR EL VUELO MORTAL
+                    </a>
                 </div>
                 
                 <div class="exercise-card">
@@ -309,16 +526,16 @@
                     </div>
                     <div class="exercise-visual">
                         <div>
-                            <div class="stick-figure">🪑</div>
-                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                                Respaldo inclinado<br>
-                                Press hacia arriba y adelante<br>
-                                Enfoca pecho superior
+                            <div class="stick-figure">⚔️</div>
+                            <div style="margin-top: 15px; font-size: 1em; color: #c0c0c0; font-weight: bold;">
+                                TRONO DE BATALLA INCLINADO<br>
+                                PRESS HACIA EL VALHALLA<br>
+                                PECHO SUPERIOR COMO ARMADURA
                             </div>
                         </div>
                     </div>
                     <div class="exercise-desc">
-                        Usando una silla inclinada o sofá como respaldo, realiza press de pecho en ángulo inclinado. Este ejercicio trabaja específicamente la parte superior del pecho.
+                        Usando tu trono de batalla (silla inclinada o sofá), realiza press de pecho en ángulo inclinado como un rey guerrero. Este ejercicio forja específicamente la parte superior del pecho, construyendo una armadura de músculos.
                     </div>
                     <div class="exercise-stats">
                         <div class="stat">
@@ -330,6 +547,9 @@
                             <div class="stat-label">Repeticiones</div>
                         </div>
                     </div>
+                    <a href="https://www.youtube.com/results?search_query=incline+dumbbell+press+technique" target="_blank" class="video-link">
+                        🎥 CONQUISTAR LA INCLINACIÓN
+                    </a>
                 </div>
                 
                 <div class="exercise-card">
@@ -339,16 +559,16 @@
                     </div>
                     <div class="exercise-visual">
                         <div>
-                            <div class="stick-figure">🤾‍♂️</div>
-                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                                Mancuernas como soporte<br>
-                                Mayor rango de movimiento<br>
-                                Flexiones elevadas
+                            <div class="stick-figure">🛡️</div>
+                            <div style="margin-top: 15px; font-size: 1em; color: #c0c0c0; font-weight: bold;">
+                                MANCUERNAS COMO PEDESTALES<br>
+                                RANGO MÁXIMO DE DEVASTACIÓN<br>
+                                FLEXIONES DE GLADIADOR
                             </div>
                         </div>
                     </div>
                     <div class="exercise-desc">
-                        Coloca las mancuernas en el piso como soporte para tus manos. Realiza flexiones de pecho usando las mancuernas como apoyo, lo que permite mayor rango de movimiento.
+                        Coloca las mancuernas en el piso como pedestales de un gladiador. Realiza flexiones de pecho usando las mancuernas como apoyo, lo que permite un rango de movimiento más profundo para una destrucción total del pecho.
                     </div>
                     <div class="exercise-stats">
                         <div class="stat">
@@ -356,10 +576,13 @@
                             <div class="stat-label">Series</div>
                         </div>
                         <div class="stat">
-                            <div class="stat-value">Al fallo</div>
-                            <div class="stat-label">Repeticiones</div>
+                            <div class="stat-value">AL FALLO</div>
+                            <div class="stat-label">Sin Piedad</div>
                         </div>
                     </div>
+                    <a href="https://www.youtube.com/results?search_query=dumbbell+push+ups+technique" target="_blank" class="video-link">
+                        🎥 FLEXIONES DE DESTRUCCIÓN
+                    </a>
                 </div>
             </div>
         </div>
@@ -367,8 +590,8 @@
         <!-- BÍCEPS -->
         <div class="section">
             <h2 class="section-title">
-                <div class="section-icon">💪</div>
-                EJERCICIOS DE BÍCEPS
+                <div class="section-icon">⚡</div>
+                FORJA DE BÍCEPS
             </h2>
             
             <div class="exercise-grid">
@@ -379,16 +602,16 @@
                     </div>
                     <div class="exercise-visual">
                         <div>
-                            <div class="stick-figure">🏋️‍♂️</div>
-                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                                Brazos alternados<br>
-                                Movimiento controlado<br>
-                                Palmas hacia adelante
+                            <div class="stick-figure">🗡️</div>
+                            <div style="margin-top: 15px; font-size: 1em; color: #c0c0c0; font-weight: bold;">
+                                BRAZOS COMO ESPADAS GEMELAS<br>
+                                MOVIMIENTO DE SAMURAI<br>
+                                PALMAS MIRANDO AL ENEMIGO
                             </div>
                         </div>
                     </div>
                     <div class="exercise-desc">
-                        De pie, con una mancuerna en cada mano, alterna el movimiento de flexión de brazos. Mantén los codos pegados al cuerpo y rota la muñeca al subir la mancuerna.
+                        De pie como un samurai, con una mancuerna en cada mano, alterna el movimiento de flexión de brazos como si empuñaras espadas gemelas. Mantén los codos pegados al cuerpo y rota la muñeca al subir la mancuerna, forjando bíceps de acero.
                     </div>
                     <div class="exercise-stats">
                         <div class="stat">
@@ -396,10 +619,13 @@
                             <div class="stat-label">Series</div>
                         </div>
                         <div class="stat">
-                            <div class="stat-value">12 total</div>
+                            <div class="stat-value">12 TOTAL</div>
                             <div class="stat-label">(6 por brazo)</div>
                         </div>
                     </div>
+                    <a href="https://www.youtube.com/results?search_query=alternating+dumbbell+bicep+curl" target="_blank" class="video-link">
+                        🎥 TÉCNICA DE SAMURAI
+                    </a>
                 </div>
                 
                 <div class="exercise-card">
@@ -410,15 +636,15 @@
                     <div class="exercise-visual">
                         <div>
                             <div class="stick-figure">🔨</div>
-                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                                Palmas hacia el cuerpo<br>
-                                Agarre neutro<br>
-                                Como sostener martillos
+                            <div style="margin-top: 15px; font-size: 1em; color: #c0c0c0; font-weight: bold;">
+                                PALMAS COMO GUERRERO<br>
+                                AGARRE NEUTRAL DE BATALLA<br>
+                                MARTILLOS DE THOR
                             </div>
                         </div>
                     </div>
                     <div class="exercise-desc">
-                        Con las palmas mirando hacia tu cuerpo (agarre neutro), flexiona los brazos manteniendo esta posición de muñeca. Trabaja tanto bíceps como antebrazo.
+                        Con las palmas mirando hacia tu cuerpo como un verdadero guerrero (agarre neutro), flexiona los brazos manteniendo esta posición de muñeca. Como si empuñaras los martillos de Thor, trabaja tanto bíceps como antebrazo en una sinfonía de destrucción.
                     </div>
                     <div class="exercise-stats">
                         <div class="stat">
@@ -430,6 +656,9 @@
                             <div class="stat-label">Repeticiones</div>
                         </div>
                     </div>
+                    <a href="https://www.youtube.com/results?search_query=hammer+curl+dumbbell+technique" target="_blank" class="video-link">
+                        🎥 MARTILLOS DE DESTRUCCIÓN
+                    </a>
                 </div>
                 
                 <div class="exercise-card">
@@ -439,16 +668,16 @@
                     </div>
                     <div class="exercise-visual">
                         <div>
-                            <div class="stick-figure">🪑</div>
-                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                                Sentado<br>
-                                Codo apoyado en muslo<br>
-                                Máxima concentración
+                            <div class="stick-figure">🧘‍♂️</div>
+                            <div style="margin-top: 15px; font-size: 1em; color: #c0c0c0; font-weight: bold;">
+                                POSICIÓN DE MONJE GUERRERO<br>
+                                CODO ANCLADO AL MUSLO<br>
+                                CONCENTRACIÓN LETAL
                             </div>
                         </div>
                     </div>
                     <div class="exercise-desc">
-                        Sentado, apoya el codo del brazo que trabajas en tu muslo interno. Realiza la flexión con máxima concentración y control, sintiendo la contracción del bíceps.
+                        Sentado como un monje guerrero, apoya el codo del brazo que trabajas en tu muslo interno como si fuera un yunque. Realiza la flexión con máxima concentración y control, sintiendo cada fibra del bíceps contraerse como cables de acero.
                     </div>
                     <div class="exercise-stats">
                         <div class="stat">
@@ -460,6 +689,9 @@
                             <div class="stat-label">Por brazo</div>
                         </div>
                     </div>
+                    <a href="https://www.youtube.com/results?search_query=concentration+curl+dumbbell" target="_blank" class="video-link">
+                        🎥 CONCENTRACIÓN MORTAL
+                    </a>
                 </div>
             </div>
         </div>
@@ -467,8 +699,8 @@
         <!-- TRÍCEPS -->
         <div class="section">
             <h2 class="section-title">
-                <div class="section-icon">🦾</div>
-                EJERCICIOS DE TRÍCEPS
+                <div class="section-icon">🔥</div>
+                ARSENAL DE TRÍCEPS
             </h2>
             
             <div class="exercise-grid">
@@ -479,16 +711,16 @@
                     </div>
                     <div class="exercise-visual">
                         <div>
-                            <div class="stick-figure">🙋‍♂️</div>
-                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                                Mancuerna sobre la cabeza<br>
-                                Codos fijos<br>
-                                Solo mueven antebrazos
+                            <div class="stick-figure">👑</div>
+                            <div style="margin-top: 15px; font-size: 1em; color: #c0c0c0; font-weight: bold;">
+                                CORONA DE HIERRO SOBRE LA CABEZA<br>
+                                CODOS FIJOS COMO TORRES<br>
+                                ANTEBRAZOS EN MOVIMIENTO LETAL
                             </div>
                         </div>
                     </div>
                     <div class="exercise-desc">
-                        Sostén una mancuerna con ambas manos por encima de la cabeza. Mantén los codos fijos y baja la mancuerna detrás de la cabeza flexionando solo los antebrazos.
+                        Sostén una mancuerna con ambas manos por encima de la cabeza como una corona de hierro. Mantén los codos fijos como torres inquebrantables y baja la mancuerna detrás de la cabeza flexionando solo los antebrazos en un movimiento de guillotina controlada.
                     </div>
                     <div class="exercise-stats">
                         <div class="stat">
@@ -500,6 +732,9 @@
                             <div class="stat-label">Repeticiones</div>
                         </div>
                     </div>
+                    <a href="https://www.youtube.com/results?search_query=overhead+tricep+extension+dumbbell" target="_blank" class="video-link">
+                        🎥 CORONA DE DESTRUCCIÓN
+                    </a>
                 </div>
                 
                 <div class="exercise-card">
@@ -509,16 +744,16 @@
                     </div>
                     <div class="exercise-visual">
                         <div>
-                            <div class="stick-figure">🦵</div>
-                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                                Inclinado hacia adelante<br>
-                                Brazo paralelo al piso<br>
-                                Extensión como patada
+                            <div class="stick-figure">🥋</div>
+                            <div style="margin-top: 15px; font-size: 1em; color: #c0c0c0; font-weight: bold;">
+                                INCLINADO COMO DEPREDADOR<br>
+                                BRAZO PARALELO AL CAMPO DE BATALLA<br>
+                                EXTENSIÓN COMO LÁTIGO MORTAL
                             </div>
                         </div>
                     </div>
                     <div class="exercise-desc">
-                        Inclinado hacia adelante, mantén el brazo superior paralelo al piso. Extiende el antebrazo hacia atrás como una "patada", contrayendo el tríceps al final del movimiento.
+                        Inclinado hacia adelante como un depredador al acecho, mantén el brazo superior paralelo al piso. Extiende el antebrazo hacia atrás como un látigo mortal, contrayendo el tríceps al final del movimiento como si dieras una patada letal con el brazo.
                     </div>
                     <div class="exercise-stats">
                         <div class="stat">
@@ -530,6 +765,9 @@
                             <div class="stat-label">Por brazo</div>
                         </div>
                     </div>
+                    <a href="https://www.youtube.com/results?search_query=tricep+kickback+dumbbell" target="_blank" class="video-link">
+                        🎥 PATADA DEVASTADORA
+                    </a>
                 </div>
                 
                 <div class="exercise-card">
@@ -539,16 +777,16 @@
                     </div>
                     <div class="exercise-visual">
                         <div>
-                            <div class="stick-figure">🤲</div>
-                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                                Mancuernas juntas<br>
-                                En el piso<br>
-                                Enfoque en tríceps
+                            <div class="stick-figure">💎</div>
+                            <div style="margin-top: 15px; font-size: 1em; color: #c0c0c0; font-weight: bold;">
+                                MANCUERNAS UNIDAS COMO DIAMANTE<br>
+                                ACOSTADO EN EL ALTAR<br>
+                                ENFOQUE LÁSER EN TRÍCEPS
                             </div>
                         </div>
                     </div>
                     <div class="exercise-desc">
-                        Acostado en el piso, sostén ambas mancuernas juntas como si fuera un solo peso. Realiza un press manteniendo los brazos cerca del cuerpo para enfatizar el trabajo de tríceps.
+                        Acostado en el altar del dolor, sostén ambas mancuernas juntas como si fuera un diamante forjado en el infierno. Realiza un press manteniendo los brazos cerca del cuerpo para enfatizar el trabajo de tríceps en una sinfonía de sufrimiento controlado.
                     </div>
                     <div class="exercise-stats">
                         <div class="stat">
@@ -560,20 +798,28 @@
                             <div class="stat-label">Repeticiones</div>
                         </div>
                     </div>
+                    <a href="https://www.youtube.com/results?search_query=close+grip+dumbbell+press" target="_blank" class="video-link">
+                        🎥 DIAMANTE DE DESTRUCCIÓN
+                    </a>
                 </div>
             </div>
         </div>
         
         <div class="tips">
-            <h3>💡 Tips Importantes para tu Somatotipo Meso-Endomorfo</h3>
+            <h3>⚡ CÓDIGOS DE GUERRA PARA MESO-ENDOMORFO ⚡</h3>
             <ul>
-                <li>Mantén descansos cortos (45-60 seg) para mantener el ritmo cardíaco activo</li>
-                <li>Usa un peso que te desafíe pero que te permita completar todas las repeticiones con buena forma</li>
-                <li>Enfócate en la conexión mente-músculo, siente cada contracción</li>
-                <li>Combina esta rutina con cardio para optimizar la quema de grasa</li>
-                <li>Mantén una alimentación alta en proteína para apoyar el crecimiento muscular</li>
-                <li>Hidrátate bien antes, durante y después del entrenamiento</li>
+                <li>Mantén descansos cortos (45-60 seg) para mantener el fuego interno ardiendo</li>
+                <li>Usa un peso que desafíe tu alma pero permita técnica perfecta como un maestro</li>
+                <li>Enfócate en la conexión mente-músculo, siente cada fibra contraerse como cables de acero</li>
+                <li>Combina esta rutina con cardio para convertirte en una máquina quema-grasa</li>
+                <li>Devora proteína como un depredador para alimentar el crecimiento muscular</li>
+                <li>Hidrátate como si fuera el elixir de la vida antes, durante y después de la batalla</li>
             </ul>
+        </div>
+        
+        <div class="beast-mode">
+            <h2>💀 MODO BESTIA ACTIVADO 💀</h2>
+            <p>No hay excusas, solo resultados brutales</p>
         </div>
     </div>
 </body>
