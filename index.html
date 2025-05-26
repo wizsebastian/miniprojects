@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutina Pecho y Brazos - Guía Visual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .info-bar {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 5px solid #FF6B6B;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        
+        .section {
+            padding: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #4ECDC4;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-icon {
+            font-size: 1.2em;
+            margin-right: 15px;
+            background: #4ECDC4;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .exercise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .exercise-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .exercise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .exercise-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .exercise-number {
+            background: #FF6B6B;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        
+        .exercise-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .exercise-visual {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #4ECDC4;
+        }
+        
+        .stick-figure {
+            font-size: 3em;
+            color: #4ECDC4;
+        }
+        
+        .exercise-desc {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .exercise-stats {
+            display: flex;
+            justify-content: space-between;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            color: #FF6B6B;
+            font-size: 1.2em;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .tips {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            color: white;
+            padding: 25px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        
+        .tips h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .tips ul {
+            list-style: none;
+        }
+        
+        .tips li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .tips li:before {
+            content: "💡";
+            position: absolute;
+            left: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .exercise-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💪 RUTINA PECHO Y BRAZOS</h1>
+            <div class="subtitle">Guía Visual para Somatotipo Meso-Endomorfo</div>
+        </div>
+        
+        <div class="info-bar">
+            <strong>🎯 Información General:</strong> Frecuencia: 2 veces por semana | Descanso entre series: 45-60 segundos | Peso: Desafiante pero controlable
+        </div>
+        
+        <!-- PECHO -->
+        <div class="section">
+            <h2 class="section-title">
+                <div class="section-icon">🫁</div>
+                EJERCICIOS DE PECHO
+            </h2>
+            
+            <div class="exercise-grid">
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div class="exercise-number">1</div>
+                        <div class="exercise-name">Press de Pecho en el Piso</div>
+                    </div>
+                    <div class="exercise-visual">
+                        <div>
+                            <div class="stick-figure">🧍‍♂️</div>
+                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                                Acostado boca arriba<br>
+                                Brazos extendidos hacia arriba<br>
+                                Bajar hasta tocar el piso
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-desc">
+                        Acostado en el piso, sostén las mancuernas con los brazos extendidos. Baja controladamente hasta que los codos toquen el suelo, luego empuja hacia arriba. Simula el press de banca tradicional.
+                    </div>
+                    <div class="exercise-stats">
+                        <div class="stat">
+                            <div class="stat-value">4</div>
+                            <div class="stat-label">Series</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">10-12</div>
+                            <div class="stat-label">Repeticiones</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div class="exercise-number">2</div>
+                        <div class="exercise-name">Aperturas en el Piso</div>
+                    </div>
+                    <div class="exercise-visual">
+                        <div>
+                            <div class="stick-figure">🤸‍♂️</div>
+                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                                Brazos abiertos en cruz<br>
+                                Codos ligeramente doblados<br>
+                                Movimiento de abrazo
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-desc">
+                        Acostado, abre los brazos en forma de cruz con los codos ligeramente doblados. Haz un movimiento como si fueras a dar un abrazo, juntando las mancuernas arriba del pecho.
+                    </div>
+                    <div class="exercise-stats">
+                        <div class="stat">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Series</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">12-15</div>
+                            <div class="stat-label">Repeticiones</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div class="exercise-number">3</div>
+                        <div class="exercise-name">Press Inclinado</div>
+                    </div>
+                    <div class="exercise-visual">
+                        <div>
+                            <div class="stick-figure">🪑</div>
+                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                                Respaldo inclinado<br>
+                                Press hacia arriba y adelante<br>
+                                Enfoca pecho superior
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-desc">
+                        Usando una silla inclinada o sofá como respaldo, realiza press de pecho en ángulo inclinado. Este ejercicio trabaja específicamente la parte superior del pecho.
+                    </div>
+                    <div class="exercise-stats">
+                        <div class="stat">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Series</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">10-12</div>
+                            <div class="stat-label">Repeticiones</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div class="exercise-number">4</div>
+                        <div class="exercise-name">Push-ups con Mancuernas</div>
+                    </div>
+                    <div class="exercise-visual">
+                        <div>
+                            <div class="stick-figure">🤾‍♂️</div>
+                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                                Mancuernas como soporte<br>
+                                Mayor rango de movimiento<br>
+                                Flexiones elevadas
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-desc">
+                        Coloca las mancuernas en el piso como soporte para tus manos. Realiza flexiones de pecho usando las mancuernas como apoyo, lo que permite mayor rango de movimiento.
+                    </div>
+                    <div class="exercise-stats">
+                        <div class="stat">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Series</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">Al fallo</div>
+                            <div class="stat-label">Repeticiones</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- BÍCEPS -->
+        <div class="section">
+            <h2 class="section-title">
+                <div class="section-icon">💪</div>
+                EJERCICIOS DE BÍCEPS
+            </h2>
+            
+            <div class="exercise-grid">
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div class="exercise-number">1</div>
+                        <div class="exercise-name">Curl Alternado</div>
+                    </div>
+                    <div class="exercise-visual">
+                        <div>
+                            <div class="stick-figure">🏋️‍♂️</div>
+                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                                Brazos alternados<br>
+                                Movimiento controlado<br>
+                                Palmas hacia adelante
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-desc">
+                        De pie, con una mancuerna en cada mano, alterna el movimiento de flexión de brazos. Mantén los codos pegados al cuerpo y rota la muñeca al subir la mancuerna.
+                    </div>
+                    <div class="exercise-stats">
+                        <div class="stat">
+                            <div class="stat-value">4</div>
+                            <div class="stat-label">Series</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">12 total</div>
+                            <div class="stat-label">(6 por brazo)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div class="exercise-number">2</div>
+                        <div class="exercise-name">Curl Martillo</div>
+                    </div>
+                    <div class="exercise-visual">
+                        <div>
+                            <div class="stick-figure">🔨</div>
+                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                                Palmas hacia el cuerpo<br>
+                                Agarre neutro<br>
+                                Como sostener martillos
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-desc">
+                        Con las palmas mirando hacia tu cuerpo (agarre neutro), flexiona los brazos manteniendo esta posición de muñeca. Trabaja tanto bíceps como antebrazo.
+                    </div>
+                    <div class="exercise-stats">
+                        <div class="stat">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Series</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">10</div>
+                            <div class="stat-label">Repeticiones</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div class="exercise-number">3</div>
+                        <div class="exercise-name">Curl Concentrado</div>
+                    </div>
+                    <div class="exercise-visual">
+                        <div>
+                            <div class="stick-figure">🪑</div>
+                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                                Sentado<br>
+                                Codo apoyado en muslo<br>
+                                Máxima concentración
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-desc">
+                        Sentado, apoya el codo del brazo que trabajas en tu muslo interno. Realiza la flexión con máxima concentración y control, sintiendo la contracción del bíceps.
+                    </div>
+                    <div class="exercise-stats">
+                        <div class="stat">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Series</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">8-10</div>
+                            <div class="stat-label">Por brazo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- TRÍCEPS -->
+        <div class="section">
+            <h2 class="section-title">
+                <div class="section-icon">🦾</div>
+                EJERCICIOS DE TRÍCEPS
+            </h2>
+            
+            <div class="exercise-grid">
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div class="exercise-number">1</div>
+                        <div class="exercise-name">Extensión Sobre Cabeza</div>
+                    </div>
+                    <div class="exercise-visual">
+                        <div>
+                            <div class="stick-figure">🙋‍♂️</div>
+                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                                Mancuerna sobre la cabeza<br>
+                                Codos fijos<br>
+                                Solo mueven antebrazos
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-desc">
+                        Sostén una mancuerna con ambas manos por encima de la cabeza. Mantén los codos fijos y baja la mancuerna detrás de la cabeza flexionando solo los antebrazos.
+                    </div>
+                    <div class="exercise-stats">
+                        <div class="stat">
+                            <div class="stat-value">4</div>
+                            <div class="stat-label">Series</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Repeticiones</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div class="exercise-number">2</div>
+                        <div class="exercise-name">Patada de Tríceps</div>
+                    </div>
+                    <div class="exercise-visual">
+                        <div>
+                            <div class="stick-figure">🦵</div>
+                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                                Inclinado hacia adelante<br>
+                                Brazo paralelo al piso<br>
+                                Extensión como patada
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-desc">
+                        Inclinado hacia adelante, mantén el brazo superior paralelo al piso. Extiende el antebrazo hacia atrás como una "patada", contrayendo el tríceps al final del movimiento.
+                    </div>
+                    <div class="exercise-stats">
+                        <div class="stat">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Series</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Por brazo</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div class="exercise-number">3</div>
+                        <div class="exercise-name">Press Cerrado con Mancuernas</div>
+                    </div>
+                    <div class="exercise-visual">
+                        <div>
+                            <div class="stick-figure">🤲</div>
+                            <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                                Mancuernas juntas<br>
+                                En el piso<br>
+                                Enfoque en tríceps
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-desc">
+                        Acostado en el piso, sostén ambas mancuernas juntas como si fuera un solo peso. Realiza un press manteniendo los brazos cerca del cuerpo para enfatizar el trabajo de tríceps.
+                    </div>
+                    <div class="exercise-stats">
+                        <div class="stat">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Series</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">10-12</div>
+                            <div class="stat-label">Repeticiones</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tips">
+            <h3>💡 Tips Importantes para tu Somatotipo Meso-Endomorfo</h3>
+            <ul>
+                <li>Mantén descansos cortos (45-60 seg) para mantener el ritmo cardíaco activo</li>
+                <li>Usa un peso que te desafíe pero que te permita completar todas las repeticiones con buena forma</li>
+                <li>Enfócate en la conexión mente-músculo, siente cada contracción</li>
+                <li>Combina esta rutina con cardio para optimizar la quema de grasa</li>
+                <li>Mantén una alimentación alta en proteína para apoyar el crecimiento muscular</li>
+                <li>Hidrátate bien antes, durante y después del entrenamiento</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
